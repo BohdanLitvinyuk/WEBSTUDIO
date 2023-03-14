@@ -478,7 +478,9 @@ body {
 .main-list {
   display: flex;
   flex-wrap: wrap;
-
+margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -569,6 +571,8 @@ body {
   margin-bottom: 0;
   justify-content: center;
   column-gap: 24px;
+  margin-right: auto;
+    margin-left: auto;
 }
 
 .team-items {
@@ -679,6 +683,8 @@ body {
   margin-top: 72px;
   margin-bottom: 0;
   padding: 0;
+  margin-right: auto;
+    margin-left: auto;
   justify-content: center;
   /* gap: 72px 16px; */
 }
