@@ -1191,6 +1191,17 @@ body {
   .footer-form {
     margin: 0;
   }
+  .adress-list {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+  }
+  .adress-link {
+    padding: 0;
+  }
+  .header-desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
