@@ -423,6 +423,7 @@ body {
   text-align: center;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -432,7 +433,12 @@ body {
   padding-top: 112px;
   padding-bottom: 112px;
 }
-
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office@2x.jpg);
+  }
+}
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -980,6 +986,7 @@ body {
 .menu-container {
   position: absolute;
   opacity: 0;
+  visibility: hidden;
 }
 .header-desktop {
   position: absolute;
@@ -1085,6 +1092,13 @@ body {
     opacity: 1;
     border-radius: 4px;
     padding: 80px 0 40px 40px;
+    opacity: 1;
+    visibility: visible;
+
+    transition-property: background-color, opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
   }
 
   .mobile-menu-button {
@@ -1126,6 +1140,9 @@ body {
     margin-top: 48px;
     margin-bottom: 0;
     padding: 0;
+  }
+  .social-item-mobile {
+    cursor: pointer;
   }
 
   .header-link.current::after {
