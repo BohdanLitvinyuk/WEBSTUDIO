@@ -26,11 +26,11 @@ body {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .section {
   padding: 96px 0;
@@ -52,6 +52,7 @@ body {
   margin-right: 76px;
 }
 .header-basic {
+  position: relative;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid var(--border-color);
@@ -104,9 +105,9 @@ body {
 .header-contacts {
   margin-left: auto;
 }
-.adress-list .item:not(:last-child) {
+/* .adress-list .item:not(:last-child) {
   margin-right: 40px;
-}
+} */
 .main-nav {
   display: flex;
   align-items: center;
@@ -274,8 +275,8 @@ body {
 /* Footer */
 .footer-section {
   background-color: var(--second-background-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 97.5px;
+  padding-bottom: 96px;
 }
 .footer-text {
   width: 264px;
@@ -286,6 +287,7 @@ body {
   margin-top: 16px;
   margin-bottom: 0;
   margin-right: auto;
+  text-align: start;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -306,9 +308,6 @@ body {
   color: var(--brand-color-white);
 }
 
-.footer-social-media {
-  margin-left: 120px;
-}
 .footer-social-tittle {
   font-style: normal;
   font-weight: 500;
@@ -319,7 +318,7 @@ body {
   margin: 0;
 }
 
-.footer-container {
+.footer-case {
   display: flex;
 }
 .footer-social-list {
@@ -375,7 +374,8 @@ body {
   margin: 0;
 }
 .subscribe-input {
-  width: 264px;
+  max-width: 398px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -427,7 +427,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 1440px;
+  width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 112px;
@@ -485,8 +485,7 @@ body {
 .main-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  row-gap: 72px;
   justify-content: center;
   list-style: none;
   margin: 0;
@@ -502,7 +501,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  margin-top: 72px;
+  margin: 0;
   margin-bottom: 0;
 }
 .article-text {
@@ -603,8 +602,7 @@ body {
   list-style: none;
   justify-content: center;
   margin-top: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
+
   padding: 0;
 }
 .social-icon {
@@ -644,6 +642,11 @@ body {
 .card-title {
   margin-top: 32px;
   margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .card-text {
   font-family: "Roboto";
@@ -690,10 +693,8 @@ body {
   margin-top: 72px;
   margin-bottom: 0;
   padding: 0;
-  margin-right: auto;
-  margin-left: auto;
   justify-content: center;
-  /* gap: 72px 16px; */
+  gap: 72px 24px;
 }
 
 .customers-link {
@@ -709,9 +710,9 @@ body {
   width: 168px;
   fill: var(--svg-fill-color);
 }
-.customers-item {
+/* .customers-item {
   margin-bottom: 72px;
-}
+} */
 
 .customers-link:hover,
 .customers-link:focus {
@@ -744,6 +745,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  display: none;
 }
 
 .modal {
@@ -751,7 +753,6 @@ body {
   width: 100%;
   height: 100%;
   max-width: 408px;
-  max-height: 584px;
   background-color: var(--modal-bg-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -846,7 +847,7 @@ body {
 }
 
 .comment-form {
-  width: 360px;
+  max-width: 360px;
   height: 120px;
   display: block;
   resize: none;
@@ -1026,15 +1027,15 @@ body {
   .customers-list {
     max-width: 428px;
     width: 100%;
-    column-gap: 16px;
   }
 
-  .footer-container {
+  .footer-case {
     flex-direction: column;
     align-items: center;
   }
   .footer-form {
     margin-left: 0;
+    margin-top: 72px;
   }
   .footer-customer-sales {
     text-align: center;
@@ -1044,7 +1045,6 @@ body {
     margin-top: 72px;
   }
   .footer-form-title {
-    margin-top: 72px;
     text-align: center;
   }
   .footer-social-tittle {
@@ -1079,6 +1079,7 @@ body {
 
   .mobile-menu-burger-icon {
     stroke: #2e2f42;
+    z-index: 1;
   }
 
   .menu-container.is-open {
@@ -1086,19 +1087,17 @@ body {
     top: 0;
     right: 0;
     display: block;
-    max-width: 428px;
     width: 100%;
     background-color: var(--modal-bg-color);
     opacity: 1;
     border-radius: 4px;
     padding: 80px 0 40px 40px;
-    opacity: 1;
     visibility: visible;
-
     transition-property: background-color, opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1);
+    z-index: 2;
   }
 
   .mobile-menu-button {
@@ -1148,12 +1147,24 @@ body {
   .header-link.current::after {
     display: none;
   }
+  .container {
+    width: 428px;
+    /* max-width: 428px; */
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
   .hero-section {
     max-width: 768px;
     width: 100%;
+  }
+  .adress-link {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
   }
   .main-list {
     display: flex;
@@ -1164,7 +1175,7 @@ body {
     flex-basis: calc((100% - 48px) / 2);
   }
   .main-list {
-    column-gap: 24px;
+    gap: 72px 24px;
   }
   .thumb {
     display: none;
@@ -1185,25 +1196,13 @@ body {
     width: 100%;
   }
 
-  .customers-list {
-    column-gap: 24px;
-    max-width: 768px;
-    width: 100%;
-  }
-
-  .customers-item {
+  /* .customers-item {
     flex-basis: calc((100% - 3 * 72px) / 3);
-  }
-  .footer-section {
-  }
-  .footer-container {
-    max-width: 768px;
-    width: 100%;
+  } */
+
+  .footer-case {
     flex-wrap: wrap;
-    margin-left: 108px;
-  }
-  .footer-social-media {
-    margin-left: 24px;
+    gap: 72px 24px;
   }
   .footer-form {
     margin: 0;
@@ -1211,13 +1210,15 @@ body {
   .adress-list {
     flex-direction: column;
     gap: 12px;
-    padding: 16px 0;
   }
   .adress-link {
     padding: 0;
   }
   .header-desktop {
     display: none;
+  }
+  .footer-case {
+    padding-left: 108px;
   }
 }
 
