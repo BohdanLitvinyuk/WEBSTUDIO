@@ -998,6 +998,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .container {
+    position: relative;
     width: 428px;
   }
 
@@ -1028,7 +1029,9 @@ body {
     max-width: 428px;
     width: 100%;
   }
-
+  .footer-section {
+    width: 428px;
+  }
   .footer-case {
     flex-direction: column;
     align-items: center;
@@ -1062,10 +1065,10 @@ body {
     max-width: 392px;
     width: 100%;
   }
-  .header-section {
+  /* .header-section {
     max-width: 428px;
     width: 100%;
-  }
+  } */
   .header-contacts {
     display: none;
   }
@@ -1145,6 +1148,12 @@ body {
 
   .header-link.current::after {
     display: none;
+  }
+  .section-our-team {
+    width: 428px;
+  }
+  .customers-section {
+    width: 428px;
   }
 }
 
