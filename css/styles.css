@@ -512,8 +512,7 @@ body {
   letter-spacing: 0.02em;
   margin-top: 8px;
   margin-bottom: 0;
-  max-width: 396px;
-  width: 100%;
+  width: 396px;
 }
 
 /* Examples*/
@@ -1244,6 +1243,7 @@ body {
   .list-item:not(:last-child) {
     margin-right: 24px;
   }
+
   .main-list {
     flex-wrap: nowrap;
   }
@@ -1255,6 +1255,7 @@ body {
   }
   .article-text {
     font-weight: 400;
+    width: 264px;
   }
   .section-our-team {
     padding-top: 120px;
