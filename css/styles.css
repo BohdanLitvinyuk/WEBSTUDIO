@@ -26,8 +26,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  width: 100%;
+  width: 428px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -374,8 +373,8 @@ body {
   margin: 0;
 }
 .subscribe-input {
-  max-width: 398px;
-  width: 100%;
+  width: 398px;
+
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -427,7 +426,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 428px;
+
   margin-left: auto;
   margin-right: auto;
   padding-top: 112px;
@@ -812,7 +811,7 @@ body {
 }
 .modal-input {
   height: 40px;
-  width: 100%;
+  width: 360px;
   padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -848,6 +847,7 @@ body {
 
 .comment-form {
   max-width: 360px;
+  width: 100%;
   height: 120px;
   display: block;
   resize: none;
@@ -996,11 +996,12 @@ body {
   opacity: 0;
 }
 @media screen and (max-width: 767px) {
-  .hero-section {
-    max-width: 428px;
-    width: 100%;
+  .container {
+    width: 428px;
   }
-
+  /* .header-basic {
+    width: 428px;
+  } */
   .hero-title {
     font-size: 36px;
     line-height: 1.11;
@@ -1079,7 +1080,6 @@ body {
 
   .mobile-menu-burger-icon {
     stroke: #2e2f42;
-    z-index: 1;
   }
 
   .menu-container.is-open {
@@ -1146,10 +1146,6 @@ body {
 
   .header-link.current::after {
     display: none;
-  }
-  .container {
-    width: 428px;
-    /* max-width: 428px; */
   }
 }
 
