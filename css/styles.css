@@ -1223,11 +1223,17 @@ body {
   .footer-case {
     padding-left: 108px;
   }
+  .subscribe-input {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1158px;
+  }
+  .section {
+    padding: 120px 0;
   }
   .hero-section {
     padding-top: 188px;
@@ -1260,5 +1266,14 @@ body {
 
   .customers-item {
     margin-bottom: 0;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+  .footer-social-media {
+    margin-left: 120px;
+  }
+  .adress-list {
+    gap: 40px;
   }
 }
