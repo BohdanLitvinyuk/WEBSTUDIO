@@ -275,7 +275,7 @@ body {
 /* Footer */
 .footer-section {
   background-color: var(--second-background-color);
-  padding-top: 97.5px;
+  padding-top: 98px;
   padding-bottom: 96px;
 }
 .footer-text {
@@ -327,6 +327,7 @@ body {
   margin-top: 16px;
   margin-bottom: 0;
   list-style: none;
+  justify-content: center;
 }
 .footer-social-item {
   fill: #f4f4fd;
@@ -374,7 +375,8 @@ body {
   margin: 0;
 }
 .subscribe-input {
-  width: 398px;
+  max-width: 398px;
+  width: 100%;
 
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -423,7 +425,8 @@ body {
   text-align: center;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
-
+  max-width: 1440px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -493,6 +496,7 @@ body {
 }
 .list-item {
   max-width: 396px;
+  width: 100%;
 }
 
 .list-title {
@@ -512,7 +516,7 @@ body {
   letter-spacing: 0.02em;
   margin-top: 8px;
   margin-bottom: 0;
-  width: 396px;
+  /* max-width: 396px; */
 }
 
 /* Examples*/
@@ -693,7 +697,7 @@ body {
   margin-bottom: 0;
   padding: 0;
   justify-content: center;
-  gap: 72px 24px;
+  gap: 72px 16px;
 }
 
 .customers-link {
@@ -706,7 +710,7 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   height: 88px;
-  width: 168px;
+  /* width: 168px; */
   fill: var(--svg-fill-color);
 }
 /* .customers-item {
@@ -997,8 +1001,9 @@ body {
 }
 @media screen and (max-width: 767px) {
   .container {
-    position: relative;
-    width: 428px;
+    /* position: relative; */
+    max-width: 428px;
+    width: 100%;
   }
 
   .hero-title {
@@ -1017,23 +1022,16 @@ body {
     display: none;
   }
   .team-list {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 264px;
-    width: 100%;
     flex-wrap: wrap;
     row-gap: 72px;
   }
-  .customers-list {
-    max-width: 428px;
-    width: 100%;
+  .customers-item {
+    width: 190px;
+    /* width: 100%; */
   }
-  .footer-section {
-    width: 428px;
-  }
+
   .footer-case {
     flex-direction: column;
-    align-items: center;
   }
   .footer-form {
     margin-left: 0;
@@ -1059,6 +1057,7 @@ body {
   }
   .footer-text {
     margin-top: 16px;
+    margin-left: auto;
   }
   .modal {
     max-width: 392px;
@@ -1148,15 +1147,9 @@ body {
   .header-link.current::after {
     display: none;
   }
-  .section-our-team {
-    width: 428px;
-  }
-  .customers-section {
-    width: 428px;
-  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
