@@ -28,8 +28,8 @@ body {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section {
   padding: 96px 0;
@@ -675,8 +675,8 @@ body {
 }
 /* CUSTOMERS SECTION */
 .customers-section {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers-tittle {
   font-family: "Roboto";
@@ -1200,8 +1200,6 @@ body {
     flex-wrap: wrap;
 
     row-gap: 64px;
-    max-width: 768px;
-    width: 100%;
   }
   .team-items {
     flex-basis: calc((100% - 24px) / 2);
@@ -1233,9 +1231,9 @@ body {
   .header-mobile {
     display: none;
   }
-  /* .footer-case {
-    padding-left: 108px;
-  } */
+  .footer-container {
+    width: 582px;
+  }
   .subscribe-input {
     width: 264px;
   }
@@ -1253,9 +1251,6 @@ body {
     padding-bottom: 188px;
     max-width: 1440px;
     width: 100%;
-  }
-  .list-item:not(:last-child) {
-    margin-right: 24px;
   }
 
   .main-list {
@@ -1275,6 +1270,10 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .customers-list {
     flex-wrap: nowrap;
   }
@@ -1290,5 +1289,29 @@ body {
   }
   .adress-list {
     gap: 40px;
+    flex-direction: row;
+  }
+  .adress-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .thumb {
+    display: block;
+  }
+  .examples-section {
+    display: block;
+  }
+  .team-items {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .footer-case {
+    gap: 0;
+  }
+  .footer-section {
+    padding: 100px 0;
+  }
+  .footer-form {
+    margin-left: 80px;
   }
 }
