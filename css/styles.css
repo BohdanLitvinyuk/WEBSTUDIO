@@ -275,7 +275,7 @@ body {
 /* Footer */
 .footer-section {
   background-color: var(--second-background-color);
-  padding-top: 98px;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 .footer-text {
@@ -580,8 +580,8 @@ body {
   margin-bottom: 0;
   justify-content: center;
   column-gap: 24px;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .team-items {
@@ -710,7 +710,7 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   height: 88px;
-  /* width: 168px; */
+
   fill: var(--svg-fill-color);
 }
 /* .customers-item {
@@ -1029,7 +1029,6 @@ body {
   }
   .customers-item {
     width: 190px;
-    /* width: 100%; */
   }
 
   .footer-case {
@@ -1085,10 +1084,12 @@ body {
   }
 
   .menu-container.is-open {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     background-color: var(--modal-bg-color);
     opacity: 1;
@@ -1149,7 +1150,7 @@ body {
   .header-link.current::after {
     display: none;
   }
-  .modal1 {
+  .modal-container {
     display: flex;
     flex-direction: column;
     max-width: 392px;
@@ -1159,6 +1160,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .header-mobile-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1180,7 +1185,7 @@ body {
     flex-basis: calc(100% / 2);
   }
   .list-item {
-    flex-basis: calc((100% - 48px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
   .main-list {
     gap: 72px 24px;
@@ -1204,9 +1209,12 @@ body {
     width: 100%;
   }
 
-  /* .customers-item {
-    flex-basis: calc((100% - 3 * 72px) / 3);
-  } */
+  .customers-item {
+    width: 168px;
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
 
   .footer-case {
     flex-wrap: wrap;
@@ -1225,9 +1233,9 @@ body {
   .header-mobile {
     display: none;
   }
-  .footer-case {
+  /* .footer-case {
     padding-left: 108px;
-  }
+  } */
   .subscribe-input {
     width: 264px;
   }
